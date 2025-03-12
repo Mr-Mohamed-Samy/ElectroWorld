@@ -1,0 +1,112 @@
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+
+}
+.navbar{
+  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: hsl(219, 100%, 50%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.searchBar{
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+.searchBar:focus{
+  outline: none;
+}
+.filterBtn{
+  height: 70%;
+  background-color: hsl(219, 100%, 50%);
+  border: none;
+  cursor: pointer;
+}
+.filterLogo{
+  height: 100%;
+}
+.acc{
+  font-size: 1.5em;
+
+}
+.CatLogo{
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+.CatCard{
+  height: 250px;
+  width: 250px;
+  border: 1px solid gray;
+  text-align: center;
+  cursor: pointer;
+}
+.logo{
+  height: 180px;
+  width: 230px;
+}
+.footer{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(219, 100%, 50%);
+  padding-bottom: 20px;
+}
+.contacts{
+  text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social{
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+.socials{
+  height: 50px;
+}
+.feedback{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.comment{
+  padding: 10px;
+  height: 40px;
+  width: 300px;
+}
+.comment:focus{
+  outline: none;
+}
+.submit{
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.aboutUs{
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
