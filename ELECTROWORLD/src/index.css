@@ -57,6 +57,10 @@ input:focus{
   text-align: center;
   cursor: pointer;
 }
+.categories{
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
 .logo{
   height: 180px;
   width: 230px;
