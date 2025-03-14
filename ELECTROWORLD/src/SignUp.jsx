@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-function Signin() {
+function Signup() {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   return (
     <div className="main-container">
-      <h2>Glad to see you again</h2>
-      <p>Sign in to access your account</p>
-      <form>
-          <input type="email" placeholder="Email" className="details" required/>
+      <h1>Welcome</h1>
+      <p>Create an account</p>
+      <form className="sign-up-form">
+          <input required type="text" placeholder="Full Name" className="details"/>
+          <input required type="email" placeholder="Email" className="details"/>
         
-
           <div className="password-wrapper">
           <input
             type={passwordVisible ? "text" : "password"}
@@ -28,15 +28,15 @@ function Signin() {
           </span>
         </div>
 
-        <button className="submit-btn">Sign In</button>
+        <button className="submit-btn">Sign Up</button>
       </form>
 
       <div className="signup">
-        <p>Don't have an account?</p>
-        <Link to="/Signup">Sign up</Link>
+        <p>Already have an account?</p>
+        <Link to="/Signin">Sign in</Link>
       </div>
     </div>
   );
 }
 
-export default Signin;
+export default Signup;

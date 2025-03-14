@@ -9,7 +9,8 @@ function Navbar(){
                 <input type="search" className="searchBar" placeholder="Looking for something specific ?"/>
                 <button className='filterBtn'><img src={filter} className='filterLogo'/></button>
                 <Link to="/Signin">Sign in</Link>
-                <a href="" className='acc'>Sign up</a>
+                <Link to="/Signup">Sign up</Link>
+                <a href="" className='aboutUs'>About us</a>
             </div>
             
 
