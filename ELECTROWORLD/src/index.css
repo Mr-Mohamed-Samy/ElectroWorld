@@ -181,6 +181,7 @@ form{
 }
 .submit-btn{
   background-color: hsl(219, 100%, 50%);
+  font-size: 1.2em;
   color: white;
   border: none;
   padding: 10px;
