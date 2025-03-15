@@ -18,7 +18,6 @@ function Footer(){
                     <h2>Leave a comment</h2>
                     <textarea placeholder="Comment here ..." className='comment'></textarea>
                     <button className="submit">Submit</button>
-                    <p>nnnn</p>
                 </div>
                 
             </div>
