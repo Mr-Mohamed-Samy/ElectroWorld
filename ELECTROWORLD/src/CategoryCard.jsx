@@ -1,25 +1,16 @@
+import { Link } from "react-router-dom";
 
-
-
-function CategoryCard(props){
-    let category = props.category
-    let logo = props.logo
-    return(
-        <>
-            <div className="CatCard">
-                <div className="CatLogo">
-                    <img src={logo} className="logo"/>
-                </div>
-                <h3>{category}</h3>
-            </div>
-        </>
-    );
-
-
-
+function CategoryCard({ category, logo }) {
+  return (
+    <Link to={`/products/${category}`} className="category-link">
+      <div className="CatCard">
+        <div className="CatLogo">
+          <img src={logo} className="logo" alt={category} />
+        </div>
+        <h3>{category}</h3>
+      </div>
+    </Link>
+  );
 }
-export default CategoryCard
 
-
-
-
+export default CategoryCard;
