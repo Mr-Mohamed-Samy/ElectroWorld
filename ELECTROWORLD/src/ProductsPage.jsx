@@ -49,7 +49,7 @@ function ProductsPage() {
     console.log("Filtered Products:", filteredProducts);
     return (
       <div>
-        <h2>{category}</h2>
+       <h2 style={{ color: "white" }}>{category}</h2>
         <div className="product-list">
           {filteredProducts.map((product) => (
             <ProductCard 
