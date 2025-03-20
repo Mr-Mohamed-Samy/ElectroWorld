@@ -81,9 +81,7 @@
     
   }
   
-  .heart_icon,
-  .cart_icon,
-  .profile_icon {
+  .icon {
     width: 35px;
     height: 35px;
     padding-right: 10px;
@@ -92,9 +90,7 @@
     transition: transform 0.2s, filter 0.2s;
   }
   
-  .heart_icon:hover,
-  .cart_icon:hover,
-  .profile_icon:hover {
+  .icon:hover {
     transform: scale(1.4);
     filter: brightness(2);
   }

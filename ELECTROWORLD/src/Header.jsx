@@ -26,7 +26,7 @@ function Header() {
             <h2 className="logo_text">ELECTROWORLD</h2>
           </div>
         </Link>
-          <Search />
+        <Search />
       </div>
 
       <div className="header">
@@ -48,9 +48,9 @@ function Header() {
 
         <Link to="/">Contacts</Link>
         <div className="icons">
-            <img src={like} className="heart_icon" alt="Wishlist" />
-            <img src={cart} className="cart_icon" alt="Cart" />
-            <img src={profile} className="profile_icon" alt="Profile" />
+            <img src={like} className="icon" alt="Wishlist" />
+            <img src={cart} className="icon" alt="Cart" />
+            <img src={profile} className="icon" alt="Profile" />
         </div>
 
       </div>
