@@ -1,50 +1,4 @@
-body{
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar{
-  height: 80px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: hsl(219, 100%, 50%);
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.navbar a{
-  text-decoration: none;
-  color: white;
-  font-size: 1.7em;
-  font-weight: 100;
-}
-.navbar h2 a{
-  font-size: 1.2em;
-}
-input{
-  width: 30%;
-  border-radius: 5px;
-  border: none;
-  padding: 10px;
-}
-input:focus{
-  outline: none;
-}
-.filterBtn{
-  height: 70%;
-  background-color: hsl(219, 100%, 50%);
-  border: none;
-  cursor: pointer;
-}
-.filterLogo{
-  height: 100%;
-}
+
 
 .CatLogo{
   border-bottom: 1px solid gray;
@@ -65,69 +19,8 @@ input:focus{
   height: 180px;
   width: 230px;
 }
-.footer{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  background-color: hsl(219, 100%, 50%);
-  padding-bottom: 20px;
-  color: white;
-}
-.contacts{
-  text-align: center;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.social{
-  display: flex;
-  width: 70%;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.gmail{
-  height: 60px;
-}
-.insta{
-  height: 45px;
-}
-.facebook{
-  height: 45px;
-}
-.feedback{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.comment{
-  padding: 10px;
-  height: 40px;
-  width: 300px;
-  border-radius: 5px;
-}
-.comment:focus{
-  outline: none;
-}
-.submit{
-  background-color: white;
-  height: 45px;
-  width: 100px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1em;
-}
-.aboutUs{
-  font-size: 2em;
-  color: white;
-  font-weight: bold;
-}
+
+
 .main-container{
   display: flex;
   flex-direction: column;

@@ -1,18 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import Signin from "./SignIn.jsx";
 import Signup from "./SignUp.jsx";
 import Home from "./Home.jsx";
 import ProductsPage from "./ProductsPage.jsx";
-
+import Header from "./Header.jsx";
 function App() {
   return (
     <>
     <Router>
     <div className="main-page">
-      <Navbar /> 
+      <Header /> 
            
         <Routes> 
           <Route path="/" element={<Home />} />

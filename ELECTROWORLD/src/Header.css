@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #0b1b32; 
+    --secondary-color: #00bfff; 
+    --background-color: #1f2833; 
+    --text-color: #ffffff; 
+    --accent-color: #ffea75; 
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+ }
+  .navbar{
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #0b1b32;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  } 
+  select{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+  }
+  .logo_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo_style {
+    width: 70px;
+    height: 60px;
+  }
+  
+  .logo_text {
+    font-size: 30px;
+    font-weight: bold;
+    color: var( --secondary-color);
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    box-shadow: 0 2px 6px #ffea75;
+    width: 60%;
+    color: white;
+  }
+  .header a{
+    color: white;
+    font-size: 1.2em;
+  }
+  .link a {
+    color: var(--text-color);
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: var(--background-color) 0.4s ease;
+  }
+  
+  .link a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0.1em solid white;
+    
+  }
+  
+  .heart_icon,
+  .cart_icon,
+  .profile_icon {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+  }
+  
+  .heart_icon:hover,
+  .cart_icon:hover,
+  .profile_icon:hover {
+    transform: scale(1.4);
+    filter: brightness(2);
+  }
+  .icons{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }

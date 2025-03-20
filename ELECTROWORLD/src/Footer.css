@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #0a192f; 
+    --secondary-color: #00bfff; 
+    --background-color: #1f2833; 
+    --text-color: #ffffff; 
+    --accent-color: #ffd700; 
+    --border-color: #0a192f; 
+  }
+  
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a192f;
+    text-align: center;
+    border-color: #ffd700;
+    padding-bottom: 20px;
+    color: white;
+  }
+  
+  .footer-content {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: var(--text-color);
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .footer-divider {
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+    margin: 20px auto;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+    margin-left: 20px;
+    
+  }
+  
+  .social-icons a :hover {
+    transform: scale(1.4);
+    filter: brightness(2);
+  }
