@@ -48,7 +48,7 @@ function ProductsPage() {
     const filteredProducts = products.filter((product) => product.category === category); 
     console.log("Filtered Products:", filteredProducts);
     return (
-      <div>
+      <div className="products-page">
        <h2 style={{ color: "white" }}>{category}</h2>
         <div className="product-list">
           {filteredProducts.map((product) => (
