@@ -34,7 +34,7 @@ function Header() {
         <Link to="/">
           <div className="logo_container">
             <img src={image} className="logo_style" alt="ElectroWorld Logo" />
-            <h2 className="logo_text">ELECTROWORLD</h2>
+            <h2 className="logo_text">Electorworld</h2>
           </div>
         </Link>
         <Search />
