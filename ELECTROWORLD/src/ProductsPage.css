@@ -1,0 +1,24 @@
+.product-list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .products-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+  }

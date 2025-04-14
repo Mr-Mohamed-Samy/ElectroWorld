@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>Phone: +213 675 50 68 89</p>
-          <p>Gmail: boukhennoufa.nihan@gmail.com</p>
+          <p>Gmail: chabanimohamedsamy@gmail.com</p>
           <div className="social-icons">
             <a href="https://www.facebook.com/?locale=fr_FR">
               <img src={FB} alt="" />

@@ -12,10 +12,11 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: #0a192f;
+    background-color: black;
     text-align: center;
     padding-bottom: 20px;
     color: white;
+    border-top: 2px solid hsl(0, 100%, 31%);
   }
   
   .footer-content {
@@ -103,9 +104,4 @@
     transition: transform 0.2s, filter 0.2s;
     margin-left: 20px;
     
-  }
-  
-  .social-icons a :hover {
-    transform: scale(1.4);
-    filter: brightness(2);
   }

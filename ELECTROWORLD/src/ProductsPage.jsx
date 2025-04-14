@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
+import "./ProductsPage.css"; // Import the CSS file for styling
 
 let products = [
     {

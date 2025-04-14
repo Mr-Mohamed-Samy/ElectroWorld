@@ -18,30 +18,28 @@
     flex: 1;
     padding: 10px 15px;
     border: 1px solid var(--border-color);
-    border-radius: 25px;
+    border-radius: 15px;
     outline: none;
     font-size: 16px;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: white;
     transition: var(--border-color) 0.3s ease;
   }
   
   .search-input:focus {
-    border-color: var(--secondary-color);
+    border-color: none;
   }
   
   .search-button {
-    padding: 10px 20px;
+    padding: 13px 20px;
     border: none;
-    border-radius: 25px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 16px;
+    border-radius: 15px;
+    background-color: hsl(0, 100%, 31%);
+    color: white;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .search-button:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    background-color: hsl(0, 100%, 38%);
   }

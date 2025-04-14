@@ -1,0 +1,25 @@
+.CatCard{
+    height: 50px;
+    width: 50px;
+    border: 1px solid gray;
+    text-align: center;
+    cursor: pointer;
+    background: white; 
+    border-radius: 50%;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CatCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px hsl(0, 100%, 31%);
+}
+
+.logo{
+    height: 70%;
+    width: 80%;
+}

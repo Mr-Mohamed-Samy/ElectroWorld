@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-
+import "./SignUp.css"; // Import your CSS file for styling
 function Signup() {
   const [passwordVisible, setPasswordVisible] = useState(false);
 

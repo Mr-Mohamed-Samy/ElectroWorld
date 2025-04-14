@@ -1,0 +1,50 @@
+  .sign-up-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 90%;
+    color: white;
+   }
+  .password-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  .icon {
+    position: absolute;
+    right: 45px;
+    top: 10px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease-in-out;
+    transform: scale(1);
+    will-change: auto;
+  }
+  
+  .icon:hover {
+    color: #333;
+    transform: scale(1);
+  }
+  .submit-btn{
+    background-color: hsl(0, 100%, 31%);
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 20%;
+    width: 85%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  .signup a{
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  .signup a:hover {
+    text-decoration: underline;
+  }
+  input:focus{
+    outline: none;
+  }
