@@ -42,7 +42,7 @@
   .logo_text {
     font-size: 30px;
     font-weight: bold;
-    color: var( --secondary-color);
+    color: hsl(0, 100%, 31%);
   }
   
   
