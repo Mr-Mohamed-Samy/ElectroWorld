@@ -28,7 +28,7 @@ function Signup() {
           </span>
         </div>
 
-        <button className="submit-btn">Sign Up</button>
+        <button className="submit-btn" type="submit">Sign Up</button>
       </form>
 
       <div className="signup">
