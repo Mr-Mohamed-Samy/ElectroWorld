@@ -2,12 +2,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import axios from "axios";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./SignIn.css";
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5173";
-function SignIn() {
+
+function Signin() {
   const [formData, setFormData] = useState({
     email: "",
-    password: "",
+    password: ""
   });
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -15,10 +17,10 @@ function SignIn() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -26,18 +28,30 @@ function SignIn() {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signin", {
+      const response = await axios.post("http://localhost:5173/api/users/login", {
         email: formData.email,
-        password: formData.password,
+        password: formData.password
       });
       
+      // Store the token and user data
       localStorage.setItem("token", response.data.token);
-      navigate("/"); 
-    } 
-    catch (error) {
-      alert(error.response?.data?.message || "Login failed");
-    }
-    finally {
+      localStorage.setItem("user", JSON.stringify(response.data.user));
+      
+      toast.success("Login successful!");
+      navigate("/");
+      
+    } catch (err) {
+      if (err.response) {
+        // Server responded with error status (4xx, 5xx)
+        toast.error(err.response.data.message || "Invalid email or password");
+      } else if (err.request) {
+        // Request was made but no response received
+        toast.error("Server not responding. Please try again later.");
+      } else {
+        // Other errors
+        toast.error("An unexpected error occurred");
+      }
+    } finally {
       setLoading(false);
     }
   };
@@ -46,18 +60,18 @@ function SignIn() {
     <div className="main-container">
       <h2>Glad to see you again</h2>
       <p>Sign in to access your account</p>
-
+      
       <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            className="details email-input"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          className="details"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        
         <div className="password-wrapper">
           <input
             type={passwordVisible ? "text" : "password"}
@@ -76,8 +90,8 @@ function SignIn() {
           </span>
         </div>
 
-        <button
-          className="submit-btn"
+        <button 
+          className="submit-btn" 
           type="submit"
           disabled={loading}
         >
@@ -87,10 +101,10 @@ function SignIn() {
 
       <div className="signup">
         <p>Don't have an account?</p>
-        <Link to="/signup">Sign up</Link>
+        <Link to="/Signup">Sign up</Link>
       </div>
     </div>
   );
 }
 
-export default SignIn;
+export default Signin;
