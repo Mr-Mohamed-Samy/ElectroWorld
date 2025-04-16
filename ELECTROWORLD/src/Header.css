@@ -102,8 +102,9 @@
     flex-direction: column;
     z-index: 1000;
     text-align: center;
-    width: 90px;
-    margin-top: 10px;
+    width: 150px;
+    margin-top: 35px;
+    font-size: 1.5em;
   }
   
   .profile-dropdown a {
