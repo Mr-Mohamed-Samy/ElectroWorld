@@ -33,7 +33,6 @@ function Signin() {
         password: formData.password
       });
       
-      // Store the token and user data
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("user", JSON.stringify(response.data.user));
       
@@ -42,13 +41,10 @@ function Signin() {
       
     } catch (err) {
       if (err.response) {
-        // Server responded with error status (4xx, 5xx)
         toast.error(err.response.data.message || "Invalid email or password");
       } else if (err.request) {
-        // Request was made but no response received
         toast.error("Server not responding. Please try again later.");
       } else {
-        // Other errors
         toast.error("An unexpected error occurred");
       }
     } finally {
