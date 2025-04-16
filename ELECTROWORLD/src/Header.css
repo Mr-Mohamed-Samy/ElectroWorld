@@ -95,7 +95,7 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%); 
-    background-color: #0b1b32;
+    background-color: black;
     border-radius: 5px;
     padding: 10px 15px;
     display: flex;
@@ -145,7 +145,6 @@
   margin: 0;
   color: white;
   font-size: 2em;
-  background-color:  hsl(0, 100%, 31%);
   padding: 25px;
   border-radius: 20px;
 }
@@ -171,7 +170,7 @@
 }
 
 .sidebar li:hover {
-  background:  hsl(0, 100%, 31%);
+  background:  rgba(255, 255, 255, 0.2);
   transition: background 0.3s ease;
 }
 
