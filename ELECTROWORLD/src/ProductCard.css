@@ -32,6 +32,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
+    color: white;
   }
   
   .product-price {
@@ -42,6 +43,7 @@
     display: inline-block;
     font-weight: bold;
     margin-bottom: 15px;
+    color: white;
   }
   
   .button-row {
@@ -75,6 +77,7 @@
   .btn.details {
     background-color: hsl(210, 100%, 35%);
     color: white;
+    font-size: 1.1em;
   }
   
   .btn.details:hover {

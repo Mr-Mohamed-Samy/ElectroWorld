@@ -8,6 +8,8 @@ import ProductsPage from "./ProductsPage.jsx";
 import Header from "./Header.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import PDpage from "./PDpage.jsx";
+
 function App() {
   return (
     <>
@@ -20,7 +22,7 @@ function App() {
           <Route path="/Signin" element={<Signin />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/products/:category" element={<ProductsPage />} />
-
+          <Route path="/products/:id" element={<PDpage />} />
         </Routes>      
         <Footer />
         
