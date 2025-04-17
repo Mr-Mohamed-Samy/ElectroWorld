@@ -32,7 +32,7 @@ const ProductDetails = ({ product }) => {
   };
 
   return (
-    <div className="product-card">
+    <div className="product-card-details">
       <div className="product-gallery">
         <div className="main-image">
           <img src={selectedImage} alt={product.name} />
@@ -79,9 +79,11 @@ const ProductDetails = ({ product }) => {
             className="quantity-input"
           />
         </div>
-        <div className="product-price">${product.price.toFixed(2)}</div>
-        <button className="add-to-cart-btn">Add to Cart</button>
-        <button className="add-to-cart-btn">Buy Now</button>
+        <div className="bttns">
+          <div className="product-pricee">{product.price.toFixed(2)}$</div>
+          <button className="add-to-cart-btn">Add to Cart</button>
+          <button className="add-to-cart-btn">Buy Now</button>
+        </div>    
       </div>
     </div>
   );

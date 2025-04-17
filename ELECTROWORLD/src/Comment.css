@@ -5,7 +5,6 @@
     padding: 2rem;
     background-color:rgba(24, 24, 24, 0.378); 
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgb(117, 117, 117);
   }
   
   .comments-section h3 {
@@ -62,25 +61,23 @@
     color: yellow;
   }
   
+
   .comment-form textarea {
     width: 100%;
     padding: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.275);
     border-radius: 6px;
-    background-color:hsl(0, 100%, 31%) ;
-    color: white;
+    background-color:white(0, 100%, 31%) ;
+    color: black;
     min-height: 100px;
-    resize: vertical;
     font-family: inherit;
     transition: border 0.3s ease;
     margin-left: auto;
-
+    font-size: 1.1em
   }
   
   .comment-form textarea:focus {
     outline: none;
-    border-color: hsl(0, 100%, 31%);
-    box-shadow: 0 4px 8px rgba(247, 90, 90, 0.4)
   }
   
   .comment-form button {

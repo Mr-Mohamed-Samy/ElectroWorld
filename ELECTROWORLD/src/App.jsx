@@ -9,11 +9,13 @@ import Header from "./Header.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PDpage from "./PDpage.jsx";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
     <Router>
+    <ScrollToTop />
     <div className="main-page">
       <Header /> 
            
@@ -21,8 +23,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Signin" element={<Signin />} />
           <Route path="/Signup" element={<Signup />} />
-          <Route path="/products/:category" element={<ProductsPage />} />
-          <Route path="/products/:id" element={<PDpage />} />
+          <Route path="/products/category/:category" element={<ProductsPage />} />
+          <Route path="/products/details/:id" element={<PDpage />} />
         </Routes>      
         <Footer />
         

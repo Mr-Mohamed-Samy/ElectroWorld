@@ -52,7 +52,9 @@ function Header() {
         <ul>
           {categories.map((category) => (
             <li key={category}>
-              <Link to={`/products/${category}`}>{category}</Link>
+              <Link to={`/products/category/${category.toLowerCase().replace(/\s+/g, "-")}`}>{category}</Link>
+              
+
             </li>
           ))}
         </ul>

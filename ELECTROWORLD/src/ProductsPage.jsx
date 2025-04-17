@@ -8,7 +8,13 @@ function ProductsPage() {
    
     const { category } = useParams(); 
     console.log("Category:", category);
-    const filteredProducts = products.filter((product) => product.category === category); 
+    const normalizedCategory = category.toLowerCase().replace(/-/g, " ");
+    
+    const filteredProducts = products.filter(
+      (product) =>
+        product.category?.toLowerCase().replace(/\s+/g, " ") === normalizedCategory
+    );
+    
     console.log("Filtered Products:", filteredProducts);
     return (
       <div className="products-page">
@@ -17,6 +23,7 @@ function ProductsPage() {
           {filteredProducts.map((product) => (
             <ProductCard 
               key={product.id} 
+              id={product.id}
               name={product.name} 
               image={product.images[0]} 
               price={product.price} 
