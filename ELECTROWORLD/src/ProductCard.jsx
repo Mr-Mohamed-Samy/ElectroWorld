@@ -8,7 +8,7 @@ function ProductCard({ id, name, image, price }) {
       <h3 className="product-name">{name}</h3>
       <div className="product-price">{price} $</div>
       <div className="button-row">
-        <Link to={`/product/${id}`} className="btn details">View Details</Link>
+        <Link to={`/products/${id}`} className="btn details">View Details</Link>
         <button className="btn buy">Buy Now</button>
       </div>
     </div>
